@@ -550,7 +550,7 @@ export default function App() {
               title: 'Comerxly',
               headerRight: () => (
                 <View style={styles.NavegacionHeader}>
-                  <Button onPress={() => navigation.navigate('Catalogo')} title="Catálogo" color="#d37e1d" />
+                  <Button onPress={() => navigation.navigate('Catalogo')} title="Catálogo" color="#d37e1d"/>
                   <Button onPress={() => navigation.navigate('Favoritos')} title="Favoritos" color="#d37e1d" />
                   <Button onPress={() => navigation.navigate('Carrito')} title="Carrito" color="#d37e1d" />
                   <Button onPress={() => navigation.navigate('Historial')} title="Historial" color="#d37e1d" />
@@ -558,7 +558,7 @@ export default function App() {
               ),
             })}
           />
-          <Stack.Screen name="Catalogo" component={Catalogo} options={{ title: 'Catálogo de productos' }} />
+          <Stack.Screen name="Catalogo" component={Catalogo} options={{ title: 'Catálogo de productos' }}/>
           <Stack.Screen name="DetalleProducto" component={DetalleProducto} options={{ title: 'Detalle del producto' }} />
           <Stack.Screen name="Favoritos" component={Favoritos} options={{ title: 'Mis favoritos' }} />
           <Stack.Screen name="Carrito" component={PantallaCarrito} options={{ title: 'Carrito de compras' }} />
@@ -584,6 +584,8 @@ const styles = StyleSheet.create({
     paddingBottom: 40,
   },
   NavegacionHeader: {
+    padding: 20,
+    margin: 10,
     flexDirection: 'row',
     alignItems: 'center',
     marginRight: 4,
